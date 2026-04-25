@@ -40,8 +40,8 @@ test('Excel file handling', async ({browser}) => {
     if(!sheet10){
         sheet10 = await workbook.addWorksheet("Sheet10")
     }
-    sheet7.getRow(1).getCell(1).value = name
-    sheet7.getRow(1).getCell(2).value = price1
+    sheet10.getRow(1).getCell(1).value = name
+    sheet10.getRow(1).getCell(2).value = price1
     await workbook.xlsx.writeFile("C:/Users/asus/Desktop/PlaywrightGIT/fileupload/New Microsoft Excel Worksheet.xlsx")
 
 });
